@@ -42,7 +42,7 @@ var input = [
 
 // Working Code V3A - WORKING BUT USES Math.hypot()
 var result = input.map(
-element => Math.sqrt(element.x ** 2 + element.y ** 2)
+  element => Math.sqrt(element.x ** 2 + element.y ** 2)
 );
 
 
