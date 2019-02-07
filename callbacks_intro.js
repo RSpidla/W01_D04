@@ -9,19 +9,19 @@ functions can do everything that other objects can do (like having attributes as
 console.log("JavaScript Functions as Objects");
 
 var myFn = function() {
-    console.log("I am function.");
-  }
+  console.log("I am function.");
+}
   
-  myFn.someAttribute = 42;
+myFn.someAttribute = 42;
   console.log(myFn.someAttribute);
-  
-  function runner(f) {
-    f();
-  }
-  
-  runner(myFn);
 
-  console.log("__________________");
+function runner(f) {
+  f();
+}
+
+runner(myFn);
+
+console.log("__________________");
 
 // The second argument/parameter is expected to be a function
 
@@ -39,15 +39,15 @@ A callback function:
 console.log("Callback Functions");
 
 function findWaldo(arr, found) {
-    for (var i = 0; i < arr.length; i++) {
-        if (arr[i] === "Waldo") {
-        found();   // execute callback
-        }
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] === "Waldo") {
+      found();   // execute callback
     }
+  }
 }
 
 function actionWhenFound() {
-console.log("Found him!");
+  console.log("Found him!");
 }
 
 findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound);
@@ -66,20 +66,28 @@ console.log("Callback Functions Updated with forEach method");
 //     }
 // }
 
-function findWaldo(list, found) {
-    list.forEach(function(word, i) {
-      if (word === "Waldo") {
-        found(i);
-      }
-    })
-  }
+// function findWaldo(list, found) {
+//     list.forEach(function(word, i) {
+//       if (word === "Waldo") {
+//         found(i);
+//       }
+//     })
+//   }
 
-  function actionWhenFound(index) {
-    console.log("Found Waldo at index " + index + "!");
-  }
+function findWaldo(list, found) {
+  list.forEach(function(word, i) {
+    if (word === "Waldo") {
+      found(i);
+    }
+  })
+}
+
+
+
+function actionWhenFound(index) {
+  console.log("Found Waldo at index " + index + "!");
+}
 
 findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound);
 
 console.log("__________________");
-
-
