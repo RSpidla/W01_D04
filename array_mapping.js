@@ -38,7 +38,7 @@ var input = [
 //   function(input) {
 //     return Math.hypot(input.x, input.y);
 //   }
-// );
+// );l
 
 // Working Code V3A - WORKING BUT USES Math.hypot()
 var result = input.map(
