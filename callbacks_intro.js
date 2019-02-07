@@ -58,22 +58,6 @@ console.log("__________________");
 
 console.log("Callback Functions Updated with forEach method");
 
-// function findWaldo(arr, found) {
-//     for (var i = 0; i < arr.length; i++) {
-//         if (arr[i] === "Waldo") {
-//             found();   // execute callback
-//         }
-//     }
-// }
-
-// function findWaldo(list, found) {
-//     list.forEach(function(word, i) {
-//       if (word === "Waldo") {
-//         found(i);
-//       }
-//     })
-//   }
-
 function findWaldo(list, found) {
   list.forEach(function(word, i) {
     if (word === "Waldo") {
@@ -81,8 +65,6 @@ function findWaldo(list, found) {
     }
   })
 }
-
-
 
 function actionWhenFound(index) {
   console.log("Found Waldo at index " + index + "!");
