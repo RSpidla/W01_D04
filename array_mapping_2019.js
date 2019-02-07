@@ -5,9 +5,7 @@ var input = [
 ];
     
 var result = input.map(
-  function(input) {
-    return Math.hypot(input.x, input.y);
-  }
+  element => Math.sqrt(element.x ** 2 + element.y ** 2)
 );
 
 console.log(result[0] === 5);
