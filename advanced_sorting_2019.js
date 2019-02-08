@@ -35,6 +35,6 @@ function sortAge(stdntA, stdntB) {
 
 
 // STEP 3 - Execute 'sort()' againest sorted-list from sortAge function and then the sorted-list from sortName function and then print to standard output
-  // This final sorted list will deal with Javascript's lexigraphical sorting default 
+  // This final sorted list will deal with Javascript's lexigraphical sorting default behavoiur
 
 console.log(students.sort(sortAge).sort(sortName));
