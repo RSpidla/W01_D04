@@ -6,7 +6,8 @@ var students = [
   ];
   
   function sortByName(student1, student2) {
-    var nameA = student1.name.toLowerCase(), nameB = student2.name.toLowerCase();
+    var nameA = student1.name.toLowerCase();
+    var nameB = student2.name.toLowerCase();
     if (nameA < nameB) return -1;
     if (nameA > nameB) return 1;
     return 0;
@@ -19,4 +20,5 @@ var students = [
   console.log(
     students.sort(sortByAge).sort(sortByName)
   )
+  
   
